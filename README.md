@@ -1,6 +1,6 @@
 # Tópicos Especiais em Inteligência Artificial do IFPE Campus Paulista
 
-Planos de aula e laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial** (oferta: *IA Generativa, LLMs e Agentes Autônomos*) do curso de Análise e Desenvolvimento de Sistemas do IFPE _Campus_ Paulista.
+Laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial** (oferta: *IA Generativa, LLMs e Agentes Autônomos*) do curso de Análise e Desenvolvimento de Sistemas do IFPE _Campus_ Paulista.
 
 
 > **Aviso**: Este repositório está em evolução.
