@@ -1,5 +1,8 @@
 # Instalando Ollama e Open WebUI
 
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/73d5e560-3a9e-4e15-849a-3ce372b506ee" />
+
+
 Guia prático para instalar o Ollama e o Open WebUI em uma instância (por exemplo, uma EC2 Ubuntu), criando um playground local para experimentação com LLMs open source.
 
 ## O que é o Ollama
