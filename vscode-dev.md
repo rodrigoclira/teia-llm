@@ -1,6 +1,11 @@
 # Instalação do Code Server em Ubuntu Linux
 
-Se você estiver usando o EC2, siga o passo a passo abaixo. Caso você esteja utilizando uma outra infraestrutura, pule para o Passo 7, onde é exibida a instalação do Code Server.
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a7d1dd7d-ee1c-4aa1-98c7-eec7578390e6" />
+
+
+
+Se você estiver usando o EC2, siga o passo a passo abaixo. Caso você esteja utilizando outra infraestrutura, pule para o Passo 7, onde é exibida a instalação do Code Server.
 
 1. Clique em 'Iniciar Instância' 
 
