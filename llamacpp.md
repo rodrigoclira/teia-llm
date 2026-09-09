@@ -35,7 +35,7 @@ O llama.cpp é distribuído como código-fonte em C e C++, então precisamos com
 - `gcc`: o compilador de C, responsável por traduzir código C em instruções executáveis.
 - `g++`: o compilador de C++, necessário porque parte do llama.cpp é escrita em C++.
 - `libssl-dev`: os arquivos de desenvolvimento da biblioteca OpenSSL, que permitem que o llama.cpp se conecte a servidores HTTPS. Isso é o que possibilita baixar modelos diretamente do Hugging Face Hub usando a flag `-hf`, sem precisar baixar o arquivo manualmente.
-- `cmake: ferramenta de código aberto e multiplataforma usada para gerenciar e automatizar o processo de construção (build) de software de forma independente do compilador
+- `cmake`: ferramenta de código aberto e multiplataforma usada para gerenciar e automatizar o processo de construção (build) de software de forma independente do compilador
 
 A flag `-y` responde "sim" automaticamente a qualquer confirmação pedida pelo instalador, o que é útil em scripts e em aulas com tempo limitado.
 
