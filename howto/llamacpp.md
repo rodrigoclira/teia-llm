@@ -114,8 +114,6 @@ Antes da aula, verifique se o repositório e a tag de quantização informados n
 4. Escreva um parágrafo curto relacionando os resultados observados com o conceito de quantização apresentado em aula, explicando o compromisso entre tamanho do modelo, velocidade de inferência e qualidade da saída.
 5. Envie a tabela e o parágrafo em um arquivo Markdown ou PDF.
 
-Esta atividade não exige GPU nem qualquer chave de API paga, sendo compatível com o requisito de uso exclusivo de ferramentas gratuitas do curso.
-
 ---
 
 **Fonte:** documentação oficial do projeto llama.cpp, disponível em https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md
