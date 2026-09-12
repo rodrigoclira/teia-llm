@@ -99,9 +99,9 @@ Antes da aula, verifique se o repositório e a tag de quantização informados n
 
 ---
 
-## Atividade proposta
+## Atividade 
 
-**Objetivo:** familiarizar os estudantes com o processo de compilação e execução local de um LLM quantizado, e com o impacto prático da quantização no desempenho.
+**Objetivo:** familiarizar-se com o processo de compilação e execução local de um LLM quantizado, e com o impacto prático da quantização no desempenho.
 
 **Enunciado:**
 
@@ -113,6 +113,18 @@ Antes da aula, verifique se o repositório e a tag de quantização informados n
    - a qualidade percebida da resposta, em uma escala de 1 a 5, com uma breve justificativa.
 4. Escreva um parágrafo curto relacionando os resultados observados com o conceito de quantização apresentado em aula, explicando o compromisso entre tamanho do modelo, velocidade de inferência e qualidade da saída.
 5. Envie a tabela e o parágrafo em um arquivo Markdown ou PDF.
+
+**Sugestões**
+
+1. Onde posso obter uma lista de modelos? Dica: procure pelos modelos publicados pela unsloth (como o usado no passo a passo). 
+   
+https://huggingface.co/models?pipeline_tag=text-generation&num_parameters=min:0,max:6B&apps=llama.cpp&sort=downloads
+
+<img width="858" height="474" alt="image" src="https://github.com/user-attachments/assets/262032cb-edd2-42ea-871a-8989b917b330" />
+
+2 Após escolher um modelo, como obter uma variante dele?
+
+<img width="858" height="474" alt="llamacpp" src="https://github.com/user-attachments/assets/d53304e3-105c-40ec-bfcf-20a7f7d64a26" />
 
 ---
 
