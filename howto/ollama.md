@@ -84,7 +84,7 @@ sudo apt update
 sudo apt install docker.io -y
 ```
 
-## 6. Instalar e rodar o Open WebUI
+## 6. Baixar e rodar a imagem docker do Open WebUI
 
 ```bash
 sudo docker run -d -p 80:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
@@ -126,6 +126,17 @@ O Open WebUI também aceita conexões com qualquer API compatível com o padrão
 
 Essa opção é útil para comparar modelos maiores (que não rodam bem na instância local) com os modelos rodando via Ollama, sem precisar de uma chave da OpenAI.
 
+## FAQ
+
+1. Como recriar o container do Open WebUI
+
+```bash
+sudo docker stop open-webui
+sudo docker rm open-webui
+sudo docker volume rm open-webui
+# Refazer o passo 6
+```
+
 ## Fontes
 
 - Rhian Lopes, "Desvendando o Ollama: construindo um playground com Ollama e Open WebUI para experimentação de LLMs", Medium (roteiro de comandos original desta instalação).
@@ -133,3 +144,6 @@ Essa opção é útil para comparar modelos maiores (que não rodam bem na inst�
 - [Open WebUI, Quick Start](https://docs.openwebui.com/getting-started/quick-start/)
 - [Open WebUI, repositório oficial no GitHub](https://github.com/open-webui/open-webui)
 - [NVIDIA NIM, catálogo de modelos e API](https://build.nvidia.com/)
+
+
+
