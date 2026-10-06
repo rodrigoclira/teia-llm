@@ -5,7 +5,7 @@ Laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial*
 > **Aviso**: Este repositório está em evolução.
 > Os códigos podem mudar ou desaparecer sem nenhum aviso
 
-> Todo o conteúdo prático roda sobre recursos gratuitos (Ollama local, camadas gratuitas de Google AI Studio, Groq, OpenRouter e Hugging Face) ou a instância EC2 da instituição. Nenhum crédito pago de API é necessário.
+> Todo o conteúdo prático roda sobre recursos gratuitos (Ollama local, camadas gratuitas de Google AI Studio, NVIDIA NIM, OpenRouter e/ou Hugging Face) ou a instância EC2 da instituição. Nenhum crédito pago de API é necessário.
 
 ## Guias de instalação
 
