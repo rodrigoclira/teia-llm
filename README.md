@@ -22,6 +22,7 @@ Laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial*
 
 | Notebook | Link |
 |---|---|
+| Gerando o token do Hugging Face | [huggingface-token.md](labs/01-geracoes_nlp/huggingface-token.md) |
 | Testando a API | [testando_api.ipynb](labs/01-geracoes_nlp/testando_api.ipynb) |
 | Três gerações de NLP | [tres_geracoes_de_NLP.ipynb](labs/01-geracoes_nlp/tres_geracoes_de_NLP.ipynb) |
 
@@ -44,3 +45,15 @@ Laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial*
 | 01 — Biblioteca Transformers | [01 - Biblioteca Transformers.ipynb](labs/03-transformers/01%20-%20Biblioteca%20Transformers.ipynb) |
 | 02 — Olhando por dentro dos LLMs | [02 - Olhando por Dentro dos LLMs.ipynb](labs/03-transformers/02%20-%20Olhando%20por%20Dentro%20dos%20LLMs.ipynb) |
 | 03 — Pipelines e tasks | [03 - Pipelines tasks.ipynb](labs/03-transformers/03%20-%20Pipelines%20tasks.ipynb) |
+
+### 04 — Engenharia de Prompt
+
+| Notebook | Link |
+|---|---|
+| 01 — Engenharia de Prompt: comparações | [01 - Engenharia_de_Prompt_comparacoes.ipynb](labs/04-engenharia_prompt/01%20-%20Engenharia_de_Prompt_comparacoes.ipynb) |
+
+### 05 — Busca Semântica
+
+| Notebook | Link |
+|---|---|
+| 01 — Busca semântica | [1 - Busca_semantica.ipynb](labs/05-busca_semantica/1%20-%20Busca_semantica.ipynb) |
