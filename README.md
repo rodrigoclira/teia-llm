@@ -16,6 +16,7 @@ Laboratórios da disciplina de **Tópicos Especiais em Inteligência Artificial*
 | 2. | Instalação do pyenv | [howto/pyenv-install.md](howto/pyenv-install.md) |
 | 3. | Instalando o llama.cpp | [howto/llamacpp.md](howto/llamacpp.md) |
 | 4. | Instalando Ollama e Open WebUI | [howto/ollama.md](howto/ollama.md) |
+| 5. | Instalando o OpenCode com NVIDIA NIM (API gratuita) | [howto/opencode-nvidia-nim-ec2.md](howto/opencode-nvidia-nim-ec2.md) |
 
 ## Laboratórios
 
