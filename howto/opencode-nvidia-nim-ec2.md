@@ -75,52 +75,35 @@ opencode --version
 
 ---
 
-## Passo 5 — Configurar a API key da NVIDIA
+## Passo 5 — Autenticar na API da NVIDIA via `/connect`
 
-Defina a chave como variável de ambiente (persistente) e crie o arquivo de configuração do OpenCode:
+O OpenCode usa o catálogo de providers do **models.dev**, que já inclui a **NVIDIA NIM** com seus modelos gratuitos. Não é necessário criar arquivo de configuração — basta autenticar pelo próprio TUI:
+
+1. Inicie o OpenCode:
 
 ```bash
-# 1) Define a chave como variável de ambiente (permanente)
-echo 'export NVIDIA_API_KEY="nvapi-SUA-CHAVE-AQUI"' >> ~/.bashrc
-source ~/.bashrc
-
-# 2) Cria o diretório de configuração
-mkdir -p ~/.config/opencode
-
-# 3) Cria o config com o provider NVIDIA NIM
-cat > ~/.config/opencode/opencode.jsonc << 'EOF'
-{
-  "$schema": "https://opencode.ai/config.json",
-  "providers": {
-    "nvidia": {
-      "name": "NVIDIA NIM",
-      "env": ["NVIDIA_API_KEY"],
-      "package": "@opencode/ai/providers/openai-compatible",
-      "settings": {
-        "baseURL": "https://integrate.api.nvidia.com/v1"
-      },
-      "models": {
-        "deepseek-ai/deepseek-v4.1-flash": {
-          "name": "DeepSeek V4.1 Flash (1M ctx)"
-        },
-        "moonshotai/kimi-k2.6": {
-          "name": "Kimi K2.6"
-        },
-        "z-ai/glm-5.3": {
-          "name": "GLM-5.3"
-        },
-        "minimaxai/minimax-m3.1-flash": {
-          "name": "MiniMax M3.1 Flash"
-        }
-      }
-    }
-  },
-  "model": "nvidia/deepseek-ai/deepseek-v4.1-flash"
-}
-EOF
+opencode
 ```
 
-> O ID do modelo usa o formato `provider/modelID` (ex.: `nvidia/deepseek-ai/deepseek-v4.1-flash`). A configuração acima já define o modelo padrão.
+2. Dentro do TUI, digite o comando:
+
+```
+/connect
+```
+
+3. Na lista de provedores, escolha **NVIDIA**.
+
+4. Quando solicitado, cole a sua API key (`nvapi-SUA-CHAVE-AQUI`).
+
+5. Agora selecione o modelo padrão:
+
+```
+/models
+```
+
+6. Escolha `deepseek-ai/deepseek-v4.1-flash` (1M de contexto, tool calling, gratuito).
+
+> A credencial fica salva no arquivo `auth.json` do OpenCode (não é commitada). Para desconectar, use `/logout` e selecione NVIDIA.
 
 ---
 
