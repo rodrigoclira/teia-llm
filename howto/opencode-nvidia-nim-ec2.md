@@ -2,8 +2,6 @@
 # Instalação do OpenCode com NVIDIA NIM (API gratuita) em Ubuntu Linux na AWS EC2
 
 
-> **Visão geral**: Este guia instala o **OpenCode** (agente de codificação open-source, alternativa ao Claude Code/Codex) configurado com a **API gratuita da NVIDIA NIM** — 100% sem custo para estudantes. O custo total da infraestrutura é R$ 0 dentro do free tier da AWS.
-
 Se você estiver usando o EC2, siga o passo a passo abaixo. Caso você esteja utilizando outra infraestrutura, pule para o Passo 5, onde é exibida a instalação do OpenCode.
 
 ---
