@@ -23,9 +23,9 @@ Se você estiver usando o EC2, siga o passo a passo abaixo. Caso você esteja ut
 
 2. Indique um nome, por exemplo: `opencode-agent`, e escolha a opção de SO: **Ubuntu Server 24.04 LTS**.
 
-3. Escolha o tipo de instância `t3.micro` (gratuito no free tier) e o seu key pair (`.pem`).
+3. Escolha o tipo de instância `t3.small` e o seu key pair (`.pem`).
 
-> 💡 **Importante**: a `t3.micro` tem apenas 1 GB de RAM. O OpenCode (Node.js + TUI) pode estourar esse limite — veja o Passo 6 para configurar o swap e evitar o processo ser morto pelo sistema ("Killed").
+> 💡 **Importante**: a `t3.small` tem apenas 1 GB de RAM. O OpenCode (Node.js + TUI) pode estourar esse limite — veja o Passo 6 para configurar o swap e evitar o processo ser morto pelo sistema ("Killed").
 
 4. Em **Configuração da Rede** (configuração do firewall/security group), libere a porta **SSH (22)**.
 
