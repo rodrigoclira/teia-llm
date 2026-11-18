@@ -105,30 +105,7 @@ opencode
 
 ---
 
-## Passo 6 — Configurar swap (evitar o processo ser morto por falta de memória)
-
-A instância `t3.micro` possui apenas 1 GB de RAM. Sem swap, o sistema operacional mata o processo OpenCode com a mensagem `Killed opencode:` (OOM Killer). Adicione 2 GB de swap:
-
-```bash
-echo "Configuring 2GB swap..."
-
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-
-# Torna permanente (sobrevive a reboot)
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-
-echo "Memory status:"
-free -m   # deve exibir "Swap: 2047"
-```
-
-> Para confirmar se o problema era falta de memória: `sudo dmesg | grep -i -E "oom|killed"`.
-
----
-
-## Passo 7 — Testar e usar o OpenCode
+## Passo 6 — Testar e usar o OpenCode
 
 ### Teste rápido (one-shot, sem TUI)
 
@@ -158,20 +135,6 @@ opencode
 ```bash
 opencode run "Crie um CRUD em Flask com SQLite" --model nvidia/deepseek-ai/deepseek-v4.1-flash
 opencode run "Revise este arquivo" -f config.yaml
-```
-
----
-
-## Passo 8 — Manter a sessão ativa (recomendado para servidor headless)
-
-Use `tmux` para o OpenCode continuar rodando quando o SSH for fechado:
-
-```bash
-sudo apt install -y tmux
-tmux new -s opencode
-opencode   # roda dentro do tmux
-# desconectar: Ctrl+B depois D
-# voltar: tmux attach -t opencode
 ```
 
 ---
